@@ -116,6 +116,17 @@ img{display:block;max-width:100%;height:auto}
 .collage picture{display:block}
 .real-note{font-size:11px;color:var(--mute);margin:16px 0 0}
 
+.results{padding:0 0 104px}
+.results-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px;align-items:start}
+.results figure{margin:0}
+.results img{width:100%;height:auto;object-fit:cover}
+.results figcaption{display:flex;justify-content:space-between;gap:10px;padding:10px 2px 0;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.results figcaption b{color:var(--ink);font-weight:700}
+.results .r1,.results .r6{grid-column:span 6}
+.results .r1 img,.results .r6 img{aspect-ratio:16/10}
+.results .r2,.results .r3,.results .r4,.results .r5{grid-column:span 3}
+.results .r2 img,.results .r3 img,.results .r4 img,.results .r5 img{aspect-ratio:4/5}
+
 .menu{background:var(--ink);color:var(--paper);padding:72px 0 80px}
 .menu .label{color:var(--pop)}
 .menu h2{font-size:clamp(38px,5vw,74px);line-height:.92;letter-spacing:-.06em;text-transform:uppercase;color:var(--paper);margin:0 0 42px;font-weight:900}
@@ -203,6 +214,11 @@ dialog .btn{width:100%;justify-content:center;margin-top:22px}
   .collage figure{grid-column:span 1!important}
   .collage .c6{grid-column:span 2!important}
   .collage img,.collage .c2 img,.collage .c6 img{aspect-ratio:1/1}
+  .results{padding-bottom:72px}
+  .results-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .results figure{grid-column:span 1!important}
+  .results .r6{grid-column:span 2!important}
+  .results img,.results .r1 img,.results .r6 img{aspect-ratio:1/1}
   .menu{padding:60px 0 66px}
   .menu-row{padding:16px 0;grid-template-columns:38px 1fr 16px;gap:10px}
   .menu-row .t{font-size:21px}
@@ -283,7 +299,20 @@ dialog .btn{width:100%;justify-content:center;margin-top:22px}
       <figure class="c5"><img src="assets/tile-building.webp" alt="Building facade in Dehiwala" loading="lazy" width="1000" height="1250"><figcaption><b>The building</b><span>05</span></figcaption></figure>
       <figure class="c6"><picture><source media="(max-width:600px)" srcset="assets/band-mobile.webp"><img src="assets/band.webp" alt="The studio storefront on Council Avenue" loading="lazy" width="2000" height="820"></picture><figcaption><b>Outside on Council Avenue</b><span>06</span></figcaption></figure>
     </div>
-    <p class="real-note">All images on this page are from The Colombo Makeup Studio's own Google listing.</p>
+    <p class="real-note">All images above are from The Colombo Makeup Studio's own Google listing.</p>
+  </div></section>
+
+  <section class="results" id="work"><div class="wrap">
+    <div class="sec-top"><h2>Work &amp; results</h2><p>Style reference only — these are not the studio's own work. Send your result photos and they replace this whole gallery.</p></div>
+    <div class="results-grid">
+      <figure class="r1"><img src="assets/result-1.webp" alt="Reference makeup result on a client" loading="lazy" width="1000" height="1250"><figcaption><b>Reference — finished look</b><span>01</span></figcaption></figure>
+      <figure class="r2"><img src="assets/result-2.webp" alt="Reference image of makeup being applied" loading="lazy" width="1000" height="1250"><figcaption><b>In the chair</b><span>02</span></figcaption></figure>
+      <figure class="r3"><img src="assets/result-3.webp" alt="Reference image of an artist working on makeup" loading="lazy" width="1000" height="1250"><figcaption><b>At work</b><span>03</span></figcaption></figure>
+      <figure class="r4"><img src="assets/result-4.webp" alt="Reference editorial makeup result" loading="lazy" width="1000" height="1250"><figcaption><b>Editorial</b><span>04</span></figcaption></figure>
+      <figure class="r5"><img src="assets/result-5.webp" alt="Reference bold makeup result" loading="lazy" width="1000" height="1250"><figcaption><b>Bold colour</b><span>05</span></figcaption></figure>
+      <figure class="r6"><img src="assets/result-6.webp" alt="Reference portrait makeup result" loading="lazy" width="1000" height="1250"><figcaption><b>Reference — portrait finish</b><span>06</span></figcaption></figure>
+    </div>
+    <p class="real-note">Reference images are placeholders. The final site should show your own before/after and finished work here.</p>
   </div></section>
 
   <section class="menu" id="menu"><div class="wrap">
